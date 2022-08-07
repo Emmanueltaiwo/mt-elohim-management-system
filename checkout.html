@@ -6,123 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
     <link rel="stylesheet" href="checkout.css">
+    <link rel="license" href="https://www.opensource.org/licenses/mit-license/">
 </head>
 <body>
-    <nav>
-        <div class="logo">
-           <h2>mt elohim <span>management system</span></h2>
-              <a href="index.html">Log out</a>
+    <header>
+        <h1>MOUNT ELOHIM HOSPITALS</h1>
+        <address contenteditable>
+            <p>Input Patient name</p>
+            <p>Input Patient address</p>
+            <p>Input patient phone number</p>
+        </address>
+        <span><img alt="" src="http://www.jonathantneal.com/examples/invoice/logo.png"><input type="file" accept="image/*"></span>
+    </header>
+    <article>
+        <h1>Recipient</h1>
+        <address contenteditable>
+            <p>Staff on Duty<br>Input phone numer</p>
+        </address>
+        <table class="meta">
+            <tr>
+                <th><span contenteditable>Receipt NO.</span></th>
+                <td><span contenteditable></span></td>
+            </tr>
+            <tr>
+                <th><span contenteditable>Date</span></th>
+                <td><span contenteditable></span></td>
+            </tr>
+            <tr>
+                <th><span contenteditable>Amount Due</span></th>
+                <td><span id="prefix" contenteditable>$</span><span>600.00</span></td>
+            </tr>
+        </table>
+        <table class="inventory">
+            <thead>
+                <tr>
+                    <th><span contenteditable>Item</span></th>
+                    <th><span contenteditable>Description</span></th>
+                    <th><span contenteditable>Rate</span></th>
+                    <th><span contenteditable>Quantity</span></th>
+                    <th><span contenteditable>Price</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a class="cut">-</a><span contenteditable>Vitamin C</span></td>
+                    <td><span contenteditable>20ml</span></td>
+                    <td><span data-prefix>$</span><span contenteditable>400</span></td>
+                    <td><span contenteditable>4</span></td>
+                    <td><span data-prefix>$</span><span>600.00</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <a class="add">+</a>
+        <table class="balance">
+            <tr>
+                <th><span contenteditable>Total</span></th>
+                <td><span data-prefix>$</span><span>600.00</span></td>
+            </tr>
+            <tr>
+                <th><span contenteditable>Amount Paid</span></th>
+                <td><span data-prefix>$</span><span contenteditable>0.00</span></td>
+            </tr>
+            <tr>
+                <th><span contenteditable>Balance Due</span></th>
+                <td><span data-prefix>$</span><span>600.00</span></td>
+            </tr>
+        </table>
+    </article>
+    <aside>
+        <h1><span contenteditable>Additional Notes</span></h1>
+        <div contenteditable>
+            <p>Thanks for choosing MOUNT ELOHIM HOSPITALS</p>
         </div>
-     </nav>
-<h1>CHECKOUT</h1>
-<hr>
-
-<div class="form">
-<label>Input Product name:</label>
-<input type="text" placeholder="Input Product name" id="product1-name">
-<br><br>
-<label>Input Product price:</label>
-<input type="text" placeholder="Input Product price" id="product1-price">
-<br><br>
-<hr>
-<br>
-
-
-<label>Input Product name:</label>
-<input type="text" placeholder="Input Product name" id="product2-name">
-<br><br>
-<label>Input Product price:</label>
-<input type="text" placeholder="Input Product price" id="product2-price">
-<br><br>
-<hr>
-<br>
-
-
-<label>Input Product name:</label>
-<input type="text" placeholder="Input Product name" id="product3-name">
-<br><br>
-<label>Input Product price:</label>
-<input type="text" placeholder="Input Product price" id="product3-price">
-<br><br>
-<hr>
-<br>
-
-
-<label>Input Product name:</label>
-<input type="text" placeholder="Input Product name" id="product4-name">
-<br><br>
-<label>Input Product price:</label>
-<input type="text" placeholder="Input Product price" id="product4-price">
-<br><br>
-<hr>
-<br>
-
-
-<label>Input Product name:</label>
-<input type="text" placeholder="Input Product name" id="product5-name">
-<br><br>
-<label>Input Product price:</label>
-<input type="text" placeholder="Input Product price" id="product5-price">
-<br><br>
-<hr>
-<br>
-
-
-<label>Input Product name:</label>
-<input type="text" placeholder="Input Product name" id="product6-name">
-<br><br>
-<label>Input Product price:</label>
-<input type="text" placeholder="Input Product price" id="product6-price">
-<br><br>
-<hr>
-<br>
-
-
-<label>Input Product name:</label>
-<input type="text" placeholder="Input Product name" id="product7-name">
-<br><br>
-<label>Input Product price:</label>
-<input type="text" placeholder="Input Product price" id="product7-price">
-<br><br>
-<hr>
-<br>
-
-
-<label>Input Product name:</label>
-<input type="text" placeholder="Input Product name" id="product8-name">
-<br><br>
-<label>Input Product price:</label>
-<input type="text" placeholder="Input Product price" id="product8-price">
-<br><br>
-<hr>
-<br>
-
-
-<label>Input Product name:</label>
-<input type="text" placeholder="Input Product name" id="product9-name">
-<br><br>
-<label>Input Product price:</label>
-<input type="text" placeholder="Input Product price" id="product9-price">
-<br><br>
-<hr>
-<br>
-
-
-<label>Input Product name:</label>
-<input type="text" placeholder="Input Product name" id="product10-name">
-<br><br>
-<label>Input Product price:</label>
-<input type="text" placeholder="Input Product price" id="product10-price">
-<br><br>
-<hr>
-<br>
-<button id="checkout">CHECKOUT</button>
-<br><br>
-
-<p id="total-text"></p>
-<br><br>
-</div>
-<br><br>
+    </aside>
 
     <script src="checkout.js"></script>
 </body>
